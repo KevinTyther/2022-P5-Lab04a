@@ -12,6 +12,15 @@ public class Lab04avst
         double principal  = 250000;
         double annualRate = 4.85;
         double numYears   = 30;
+        double numMonth = 30 * 12;
+        double RoI = 0.0575; // Rate of Interest
+        double top;
+        double bottom;
+        double monthly;
+
+        top = 1 + RoI;
+        top = Math.pow(top,numMonth);
+        top = RoI * top;
 
 
 
